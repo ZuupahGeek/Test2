@@ -24,27 +24,54 @@
     <header>
 
         <!-- navigation section -->
-        <nav class="navbar navbar-expand-lg navbar-light bg-warning">
+        <nav class="navbar navbar-expand-lg navbar-light bg-dark">
             <div class="container">
 
-                    <a class="navbar-brand" href="#">Rövans</a>
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarNav">
-                        <ul class="navbar-nav">
-                            <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#">Home</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Features</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Pricing</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+
+                <a class="navbar-brand" href="#">
+
+                    <i class="fas fa-american-sign-language-interpreting"></i>
+                    <i class="fas fa-cookie-bite"></i>
+                    Hemsida
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav mr-auto">
+
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
                         </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="features.html">Features</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Pricing</a>
+                        </li>
+
+                        <!-- m, my, mx, mt, mr, mb, ml, -0, -1, -2, -3, -4, -5 = marginal, dvs elementets förhållande till kringvarande objekt -->
+                        <!-- p, py, px, pt, pr, pb, pl, -0, -1, -2, -3, -4, -5 = padding, dvs innehållet i ett element -->
+
+                    </ul>
+                    <ul class="navbar-nav">
+
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="index.html"><i class="fab fa-twitter"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="features.html">
+                                <i class="fab fa-facebook"></i>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <i class="fab fa-instagram-square"></i>
+                            </a>
+                        </li>
+
                     </ul>
                 </div>
             </div>
@@ -53,8 +80,46 @@
     </header>
 
 
+    <!-- carousel slide section -->
+    <section>
+        <div id="carouselExampleSlidesOnly" class="carousel slide carousel-fade" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item" data-interval="30000">
+                    <img src="images/slider/De-Wott.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item" data-interval="30000">
+                    <img src="images/slider/obama mask meme.jpeg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item  active" data-interval="30000">
+                    <img src="https://scontent-arn2-1.xx.fbcdn.net/v/t1.0-9/48429029_10157369196969893_8401125467435827200_o.jpg?_nc_cat=111&_nc_sid=a4a2d7&_nc_ohc=kzt-xXKoWzEAX8ugUiS&_nc_ht=scontent-arn2-1.xx&oh=97b9972ddbab51a9a767ee103c6850cb&oe=5FB42D4D"
+                        class="d-block w-100" alt="...">
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <section>
+        <div class="card" style="width: 18rem;">
+            <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                    card's content.</p>
+                <a href="#" class="card-link">Card link</a>
+                <a href="#" class="card-link">Another link</a>
+            </div>
+        </div>
 
+    </section>
+
+    <!-- footer section -->
+
+    <footer class="bg-dark text-white text-center">
+        <div class="container m-0">
+        &copy; 2020 EC-Utbildning
+</div>
+
+    </footer>
 
 
 
