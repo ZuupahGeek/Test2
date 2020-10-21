@@ -9,18 +9,43 @@
 /*  service page   */
 
 
-.navbar-brand {
+.navbar {
     font-family: "arial";
-    font-weight: 500;
+    background-color: rgba(216, 98, 14, 0.801);
+    font-style: normal;
+    padding: 1rem;
+    
+}
 
+.jumbotron {
+   background-color: #1460accb;
+   margin-bottom: 0rem;
+}
+
+}
+
+.display-4 {
+    font-size: 2.5rem;
 }
 
 
 /* Small devices (landscape phones, 576px and up)*/
-@media (min-width: 576px) { ... } 
+@media (min-width: 576px) {
+    .jumbotron {
+        padding: 4rem 0rem 1rem 0rem;
+       
+      }
+    }
+
+    .display-4 {
+        font-size: 2.5rem;
+    }
+ } 
 
 /* Medium devices (tablets, 768px and up)*/
-@media (min-width: 768px) { ... } 
+@media (min-width: 768px) {
+    
+ } 
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) { ... }
@@ -29,4 +54,6 @@
 @media (min-width: 1200px) { ... }
 
 /* XX-Large devices (larger desktops, 1400px and up) */
-@media (min-width: 1400px) { ... }
+@media (min-width: 1400px) { 
+ 
+  }
