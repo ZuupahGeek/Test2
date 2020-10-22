@@ -1,0 +1,19 @@
+@import "../standard.css";
+
+html, body {
+    padding: 0;
+}
+
+.box {
+    height: 100vh;
+    display: flex;
+    background: salmon;
+    /* background-image: url(images/bg-leaves.jpg);
+    background-position: center center;
+    background-repeat: no-repeat; */
+}
+
+.content-center {
+    margin: auto;
+    text-align: center;
+}

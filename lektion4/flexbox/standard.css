@@ -37,8 +37,8 @@ a:hover, a:active {
 }
 
 .container {
-    max-width: 90%;
-    margin: auto;
+    max-width: 100%;
+    
 }
 
 .d-flex {
