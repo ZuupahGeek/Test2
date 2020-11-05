@@ -1,0 +1,22 @@
+.btn {
+    background-color: transparent;
+    border: 1px solid transparent;
+    padding: 1rem 2.5rem;
+    border-radius: 8px;
+
+    transition-property: box-shadow, background-color;
+    transition-duration: 0.2s;
+    /* transition-timing-function: ease-in-out; */
+}
+
+.btn-coral {
+    background-color: lightcoral;
+    border-color: lightcoral;
+    color: #ffffff;
+
+    box-shadow: 10px 8px 10px #888888;
+}
+
+.btn-coral:hover {
+box-shadow: 5px 4px 5px #888888;
+}

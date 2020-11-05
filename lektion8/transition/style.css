@@ -1,0 +1,26 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+    
+}
+
+.container {
+    width: 100%;
+   margin: auto;
+   height: 100vh;
+    display: flex;
+   
+}
+
+.btn {
+    margin: auto;
+    width: 30rem;
+    height: 10rem;
+    font-size: 3rem;
+}
