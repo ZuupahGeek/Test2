@@ -1,0 +1,46 @@
+.animate-shrinkandgrow {
+    position: relative;
+
+   left: 0px;
+   bottom: 0px;
+
+   animation-name: slide-around;
+   animation-duration: 4s;
+   animation-iteration-count: infinite;
+   animation-duration: 12s;
+   animation-direction: alternate-reverse;
+   /* animation-duration: 2s;
+   animation-fill-mode: forwards;
+   animation-iteration-count: infinite;
+   animation-direction: alternate;
+   animation-timing-function: ease-out;
+   animation-delay: 3s; */
+}
+
+@keyframes slide-in-left {
+
+    0% {
+        right: 700px;
+    }
+    100% {
+        right: 0;
+    }
+}
+
+@keyframes slide-in-right {
+
+    0% {
+        left: 100%;
+    }
+    100% {
+        left: 0;
+    }
+}
+
+@keyframes slide-around {
+    0% {top: 0; left: 0;}
+    25% {top: 0; left: calc(100% - 100px);}
+    50% {top: calc(100% - 100px); left: calc(100% - 100px);}
+    75% {top: calc(100% - 100px); left: 0;}
+    100% {top: 0; left: 0;}
+}
