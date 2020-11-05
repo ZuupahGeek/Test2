@@ -1,81 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <script src="https://kit.fontawesome.com/b060d22c47.js" crossorigin="anonymous"></script>
-    <meta charset="UTF-8">
+  <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Startsida</title>
+
+    <script src="https://kit.fontawesome.com/b060d22c47.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Slab:wght@300;400&display=swap" rel="stylesheet">
 </head>
+
 <body>
+
+    <!-- top menu inte för mobil -->
+<nav class="navbar-top ">
+    <div class="container">
+        <div class="nav-clock">
+            <i class="far fa-clock"></i>
+            Working hours: Monday – Friday: 9:00 – 18:00
     
-<!-- top menu inte för mobil -->
+        </div>
+        <div class="navbar-social">
+            <i class="fab fa-facebook-f"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-google-plus-g"></i>
+            <i class="fab fa-instagram"></i>
 
-
-
-<!-- main menu -->
-
-<nav class="navbar-main">
-
-    <div class="navbar-logo">
-        <img src="images/Logo.svg" alt="">
-     
-    </div>
-        <div class="hamburger-menu">
-            <i class="fas fa-bars"></i>
-
-</div>
-</nav>
-
-<!-- showcase (siluett ej med i mobil) -->
-
-<div class="showcase">
-    <div class="silhuett">
-        <img src="images/placehold.svg" alt="">
-    </div>
-        <div class="showcase-text">
-        <h2>Modern technologies ensure safety</h2>
-        <p>Our clinic is equipped with the highest quality medical and dental equipment,
-    which allows for quick and effective treatment of the patient.</p>
-
-    </div>
-    <div class="about-button">
-        <a href=""><img src="images/clinic-button.svg" alt=""></a>
-    </div>
-
+        </div>
 </div>
 
-
-
-<!-- about us-sidan -->
-
-
-<!-- Services - Flex wrap!! -->
-
-
-
-
-<!-- appointment -->
-
-<nav class="appointment">
-    <div class="appointment-content">
-        <p>Do not wait and make an appointment today!</p>
-    </div>
-    <div class="appointment-button">
-        <a href="#"><img src="images/appointment.svg" alt=""></a>
-    </div>
 </nav>
 
-<!-- footer -->
 
-<footer>
-    <div class="footer">
-        <p>&copy; 2020 DentialClinic</p>
+    <!-- main menu -->
 
-    </div>
+    <nav class="navbar-main">
+        <div class="container">
+            <a class="navbar-logo" href="#">
+                <img src="images/Logo.svg" alt="">
+            </a>
 
-</footer>
+            <button class="hamburger-menu collapse">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="navbar-links collapse">
+                <a class="nav-link" href="#">Home</a>
+                <a class="nav-link" href="#">About Us</a>
+                <a class="nav-link" href="#">Services</a>
+                <a class="nav-link" href="#">Contact</a>
+        </div>
+
+            </div>
+        
+    </nav>
+
+    <!-- showcase (siluett ej med i mobil) -->
+
+    <section class="showcase">
+            
+                <img src="images/placehold.svg" alt="">
+
+            <div class="showcase-text">
+                <h2>Modern technologies ensure safety</h2>
+                <p>Our clinic is equipped with the highest quality medical and dental equipment,
+                    which allows for quick and effective treatment of the patient.</p>
+
+                <button class="about-us about-us-green">About our clinic</button>
+            </div>
+       
+    </section>
+
+
+
+    <!-- about us-sidan -->
+
+
+    <!-- Services - CSS-Grid!! -->
+
+
+
+
+    <!-- appointment -->
+
+    <nav class="appointment">
+        <div class="appointment-content">
+            <p>Do not wait and make an appointment today!</p>
+        </div>
+        <div class="appointment-button">
+            <a href="#"><img src="images/appointment.svg" alt=""></a>
+        </div>
+    </nav>
+
+    <!-- footer -->
+
+    <footer>
+        <div class="footer">
+            <p>&copy; 2020 DentialClinic</p>
+
+        </div>
+
+    </footer>
 
 </body>
+
 </html>
