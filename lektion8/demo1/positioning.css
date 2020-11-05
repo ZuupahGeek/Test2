@@ -1,0 +1,17 @@
+/* postioner:
+    static = standard, går inte att rubba
+    relative = relativ till sin div över
+    Absolute = helt frigjord 
+    Fixed = objektet stannar på plats, oavsett scroll
+    sticky = liknande till fixed, fast parent-diven tar med sig den */
+
+
+#child {
+    position: relative;
+
+  
+    right: 25px;
+    bottom: 25px;
+
+    z-index: -1;  /* lägger objekt bakom eller framför andra objekt */
+}

@@ -1,0 +1,90 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+.container {
+    width: 100%;
+    padding: 0 1rem;
+}
+
+#topnavbar .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.whitespace {
+    height: 2000px;
+}
+
+a {
+    text-decoration: none;
+    color: lightseagreen;
+    text-transform: uppercase;
+    font-weight: 450;
+}
+
+#topnavbar {
+    padding: 1rem 0;
+    border-bottom: 1px solid black;
+}
+
+#topnavbar .container #opening-hours {
+    margin-left: 2rem;
+
+}
+
+#topnavbar .container #opening-hours i {
+    margin-right: 1rem;
+    font-size: 1.3em;
+}
+
+#topnavbar > .container > #social-media {
+    margin-right: 2rem;
+}    
+
+#topnavbar > .container > #social-media > ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    font-size: 1.3em;
+}
+
+#topnavbar > .container > #social-media > ul > li {
+    margin-left: 2rem;
+}
+
+#navbar {
+    position: sticky;
+    top: 0;
+    padding: 1.5rem 0;
+    background-color: #ffffffce;
+}
+
+#navbar .container {
+    display: flex;
+   justify-content: space-between;
+   align-items: center;
+  
+}
+
+#navbar .logo {
+    margin-left: 2rem;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+#navbar > .container > ul {
+    display: flex;
+    list-style: none;
+    margin-right: 2rem;
+}
+
+#navbar > .container > ul > li {
+    margin-left: 1rem;
+}
