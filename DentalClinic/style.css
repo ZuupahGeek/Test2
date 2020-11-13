@@ -89,12 +89,12 @@ p {
   display: flex;
   justify-content: space-between;
   border: 1px solid black;
-  height: 20rem;  
+   
 }
 
 #silhuett {
  
-  background-image: url(images/placehold.svg);
+  background-image: url(images/Showcase.svg);
   margin: 0 0 0 4rem;
   height: 19rem;
   width: 17.4rem;
@@ -137,53 +137,156 @@ p {
 }
 
 
-/* appointment */
+/* About us Section */
 
-.appointment {
+#about-us {
   display: flex;
-  background-color:#2BAAEC ;
-  opacity: 80%;
-  height: 4rem;
-  justify-content: space-between;
-  padding: 1.3rem;
+  height: 21rem;
+  justify-content: center;
+  margin-top: 1rem;
 }
 
-.appointment p {
-  color: white;
-  font-family: 'Roboto Slab', serif;
+#about-us-text {
+  width: 24rem;
+  margin-left: 3rem;
+}
+
+
+#about-us-rubrik {
+ 
+  border-bottom: 3px solid #25E6C8;
+}
+
+#about-us-rubrik h2 {
+  font-weight: 200;
+  line-height: 0.3rem;
   
-  font-size: 0.5rem;
-  width: 15rem;
 }
 
-.appointment-button a img {
-  width: 5rem;
-  height: 2rem;
+#about-us-rubrik p {
+  display: inline-block;
+  color: #2BAAEC;
+  line-height: 0.3rem;
 }
+
+.about-us-small {
+  margin-top: 1rem;
+  color: #626262;
+  font-size: 0.6rem;
+}
+
+#about-us-numbers {
+  display: flex;
+  justify-content: space-between;
+  width: 20rem;
+}
+
+#about-us-numbers h2 {
+  color: #2baaec;
+  font-weight: 300;
+}
+
+#about-us-numbers h5 {
+  font-size: 0.6rem;
+  font-weight: 300;
+  margin-top: -1rem;
+  color: #626262;
+}
+
+
+#about-us-silhouette img {
+  height: 20rem;
+  margin-right: 3rem;
+}
+
+
+/* Our Services Section */
+
+.service-bg {
+  background-color: #F7F7F7;
+  height: 39rem;
+}
+
+#service-rubrik {
+  display: flex;
+  width: 12rem;
+  height: 4.5rem;
+  justify-content: center;   
+  border-bottom: 2px solid #25E6C8;
+  
+}
+
+#service-rubrik h3 {
+  font-weight: 300;
+}
+
+
+
+/* CSS GRID */
+
+#our-services {
+
+}
+
+.service-grid {
+  display: grid;
+  margin-top: 1rem;
+  justify-content: center;
+  grid-gap: 18px;
+  grid-template-columns: auto auto auto;
+  border: 1px solid black;
+}
+
+.grid-item {
+  display: flex;
+  justify-content: center;
+  background-color: #ffffff;
+  width: 13rem;
+  height: 12rem;
+  border-radius: 8px;
+}
+
+.service-icon-bg {
+  margin-top: 2rem;
+  background-color: #25E6C8;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  
+}
+.service-icon {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1rem;
+  width: 2rem;
+}
+
+.dental-implants {
+  width: 1.2rem;
+}
+
+.effective-protection {
+  width: 1.7rem;
+}
+
+
+
+
+/* appointment Section */
+
+
 
 
 
 
 /* footer */
 
-.footer {
-  display: flex;
-  background-color: #2BAAEC;
-  height: 2rem;
-}
 
-.footer p {
-  font-family:'Roboto', sans-serif;
-  margin: auto;
-  text-align: center;
-  font-size: 5px;
-  color: #F3FBFF;
-  opacity: 60%;
-;
-}
 
 
 media querys
+
 @media (min-width: 480px) {
  
 .container {
@@ -194,7 +297,7 @@ media querys
 
  /* media querys navbar */
   
-  }
+  
   .navbar-main .navbar-logo {
     margin-left: 5rem;
   }
@@ -202,7 +305,7 @@ media querys
     margin-right: 5rem;
   }
 
-  
+}
     
 
   /* media querys showcase */
