@@ -224,8 +224,11 @@ p {
 
 /* CSS GRID */
 
-#our-services {
 
+
+.center {
+  display: flex;
+  justify-content: center;
 }
 
 .service-grid {
@@ -244,7 +247,10 @@ p {
   width: 13rem;
   height: 12rem;
   border-radius: 8px;
+  border: 1px solid black;
 }
+
+
 
 .service-icon-bg {
   margin-top: 2rem;
@@ -252,10 +258,11 @@ p {
   width: 4rem;
   height: 4rem;
   border-radius: 50%;
+  border: 1px solid black;
   
 }
 .service-icon {
-  display: block;
+  display: flex;
   margin-left: auto;
   margin-right: auto;
   margin-top: 1rem;
@@ -269,7 +276,6 @@ p {
 .effective-protection {
   width: 1.7rem;
 }
-
 
 
 
