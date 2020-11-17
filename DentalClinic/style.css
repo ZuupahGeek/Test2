@@ -43,18 +43,8 @@ p {
 
 /* Logo och länkar/hamburgare */
 
-
-
-
-/* lägg till Navbar för länkar, när hamburgaren ryker */
-
-.navbar-main .container {
-  display: flex;
-  justify-content: space-between;
-}
-
-.navbar-links {
-  display: none;
+#logo img {
+  width: 8rem;
 }
 
 .hamburger-menu {
@@ -67,6 +57,19 @@ p {
 .hamburger-menu :active {
   color: #25e6c8;
 }
+
+/* lägg till Navbar för länkar, när hamburgaren ryker */
+
+.navbar-main .container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.navbar-links {
+  display: none;
+}
+
+
 
 
 /* showcase content */
@@ -328,26 +331,15 @@ background-color: #2baaec;
   margin-top: 1rem;
 }
 
-media querys
+/* media querys */
 
 @media (min-width: 480px) {
- 
-.container {
-  max-width: 460px;
-}
 
-
-
- /* media querys navbar */
-  
-  
-  .navbar-main .navbar-logo {
-    margin-left: 5rem;
-  }
-  .navbar-main .hamburger-menu {
-    margin-right: 5rem;
+  .container {
+    max-width: 460px;
   }
 
+  
 }
     
 
