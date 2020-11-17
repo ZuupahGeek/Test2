@@ -14,6 +14,7 @@ html, body{
 h1, h2, h3, h4, h5 {
   font-family: 'Roboto Slab', serif;
   color: #363636;
+  font-weight: 300;
 }
 
 p {
@@ -34,8 +35,7 @@ p {
 
 .navbar-main {
   display: flex;
- 
-  justify-content: space-between;
+  justify-content: center;
   padding: 1rem;
   width: auto;
 }
@@ -43,14 +43,7 @@ p {
 
 /* Logo och länkar/hamburgare */
 
-#logo {
-  margin-left: 3rem;
-  background-image: url(images/Logo.svg);
-  background-size: cover;
-  /* border: 1px solid black; */
-  height: 3rem;
-  width: 9rem;
-}
+
 
 
 /* lägg till Navbar för länkar, när hamburgaren ryker */
@@ -58,8 +51,6 @@ p {
 .navbar-main .container {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  /* border: 1px solid black; */
 }
 
 .navbar-links {
@@ -83,32 +74,26 @@ p {
 .showcase {
   background-color: #DEDEDE;
   height: 20rem; 
+  width: 100%;
 }
 
-.showcase .container {
-  display: flex;
-  justify-content: space-between;
-  border: 1px solid black;
-   
+.showcase-content {
+display: flex;
+justify-content: center;
 }
 
-#silhuett {
- 
-  background-image: url(images/Showcase.svg);
-  margin: 0 0 0 4rem;
-  height: 19rem;
-  width: 17.4rem;
-  
-  background-size: cover;
-  /* border: 1px solid black; */
+#silhuett img {
+margin-top: 1.3rem;
+margin-right: 4rem;
+width: 16rem;
+display: none;
 }
 
 .showcase-text {
- 
-  margin: auto;
-  margin-left: 3rem;
+  margin-top: 3rem;
   width: 18rem;
-  /* border: 1px solid black; */
+  text-align: center;
+
  
 }
 .showcase-text {
@@ -116,7 +101,6 @@ p {
 }
 
 .showcase-text h2 {
-  font-weight: 300;
   color: #363636;
 }
 
@@ -134,8 +118,12 @@ p {
   width: 6.5rem;
   font-size: 0.5rem;
   font-weight: 600;
+  cursor: pointer;
 }
 
+#about-btn:hover {
+  background-color: #2baaec;
+}
 
 /* About us Section */
 
@@ -148,7 +136,7 @@ p {
 
 #about-us-text {
   width: 24rem;
-  margin-left: 3rem;
+  text-align: center;
 }
 
 
@@ -158,7 +146,6 @@ p {
 }
 
 #about-us-rubrik h2 {
-  font-weight: 200;
   line-height: 0.3rem;
   
 }
@@ -176,6 +163,7 @@ p {
 }
 
 #about-us-numbers {
+  margin-left: 1rem;
   display: flex;
   justify-content: space-between;
   width: 20rem;
@@ -183,12 +171,10 @@ p {
 
 #about-us-numbers h2 {
   color: #2baaec;
-  font-weight: 300;
 }
 
 #about-us-numbers h5 {
   font-size: 0.6rem;
-  font-weight: 300;
   margin-top: -1rem;
   color: #626262;
 }
@@ -197,6 +183,7 @@ p {
 #about-us-silhouette img {
   height: 20rem;
   margin-right: 3rem;
+  display: none;
 }
 
 
@@ -204,7 +191,7 @@ p {
 
 .service-bg {
   background-color: #F7F7F7;
-  height: 39rem;
+  height: 92rem;
 }
 
 #service-rubrik {
@@ -216,57 +203,71 @@ p {
   
 }
 
-#service-rubrik h3 {
-  font-weight: 300;
-}
 
 
 
-/* CSS GRID */
+/* CSS GRID SERVICES */
 
-
-
-.center {
-  display: flex;
-  justify-content: center;
-}
 
 .service-grid {
   display: grid;
   margin-top: 1rem;
   justify-content: center;
   grid-gap: 18px;
-  grid-template-columns: auto auto auto;
-  border: 1px solid black;
+  grid-template-rows: auto;
 }
 
 .grid-item {
-  display: flex;
-  justify-content: center;
   background-color: #ffffff;
-  width: 13rem;
-  height: 12rem;
+  width: 14rem;
+  height: 13rem;
   border-radius: 8px;
-  border: 1px solid black;
 }
 
-
+.service-icon-and-bg {
+  display: flex;
+  height: 6.5rem;
+  justify-content: center;
+}
 
 .service-icon-bg {
   margin-top: 2rem;
   background-color: #25E6C8;
   width: 4rem;
   height: 4rem;
-  border-radius: 50%;
-  border: 1px solid black;
-  
+  border-radius: 50%;  
+  cursor: pointer;
 }
+
+.service-icon-bg:hover {
+background-color: #2baaec;
+}
+
 .service-icon {
   display: flex;
   margin-left: auto;
   margin-right: auto;
   margin-top: 1rem;
   width: 2rem;
+}
+
+.service-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+ 
+}
+
+.service-text h4 {
+  font-size: 0.8rem;
+}
+
+.service-text p {
+  width: 10.5rem;
+  color: #626262;
+  text-align: center;
+  margin-top: -0.6rem;
+  font-size: 0.6rem;
 }
 
 .dental-implants {
@@ -281,15 +282,51 @@ p {
 
 /* appointment Section */
 
+#appointment-bg {
+  background-color: #2ba8ecd2;
+  height: 7rem;
+}
+
+.appointment-content {
+ display: flex;
+ flex-direction: column;
+ text-align: center;
+}
 
 
+.appointment-content h3 {
+  color: #ffffff;
+  font-size: 1rem;
+}
 
-
+.appointment-content button {
+  height: 1.8rem;
+  width: 9rem;
+  align-self: center;
+  color: #2baaec;
+  font-size: 0.6rem;
+  font-weight: 750;
+  border: none;
+  border-radius: 6px;
+  
+}
 
 /* footer */
 
+.footer-bg {
+  display: flex;
+  justify-content: center;
+  background-color: #2baaec;
+  height: 3rem;
+  padding-top: 0; 
+}
 
-
+#footer p {
+  font-size: 0.5rem;
+  color: #F3FBFF;
+  font-weight: 100;
+  margin-top: 1rem;
+}
 
 media querys
 
@@ -314,18 +351,25 @@ media querys
 }
     
 
-  /* media querys showcase */
-
+ 
 
 
 @media (min-width: 768px) {
 
   .container {
     max-width: 720px;
-    /* border: 1px solid black; */
   }
 
  /* navbar */
+
+
+ 
+  #logo img {
+    width: 8rem;
+    margin-left: 2rem;
+  }
+ 
+
 
   .navbar-top {
     display: block;
@@ -340,14 +384,14 @@ media querys
   
   .nav-clock {
     margin-left: 4rem;
-    font-size: 0.7rem;
+    font-size: 0.6rem;
     color: #626262;
   
   }
   
   .clock {
     color: #2BAAEC;
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     margin-right: 0.5rem;
   }
 
@@ -358,7 +402,7 @@ media querys
   .navbar-social a {
    color: #2BAAEC;
    margin-left:1rem;
-   font-size: 0.7rem;
+   font-size: 0.5rem;
    }
 
    .navbar-social a:hover {
@@ -371,8 +415,9 @@ media querys
 
   .navbar-links {
     display: flex;
-    font-size: 0.7rem;
-    margin-right: 4rem;
+    margin-top: 1rem;
+    font-size: 0.5rem;
+    margin-right: 3.5rem;
   }
 
 .navbar-links a {
@@ -384,31 +429,111 @@ media querys
 }
 
 
+/* Showcase content */
+
+#silhuett img {
+  margin-top: 1.3rem;
+  margin-right: 4rem;
+  width: 16rem;
+  display: block;
+  }
+  
+  .showcase-text {
+    margin-top: 3rem;
+    width: 18rem;
+    text-align: left;
+  
+   
+  }
+
+
+  /* about us Content */
+
+  #about-us-silhouette img {
+    height: 20rem;
+    margin-right: 3rem;
+    display: block;
+  }
+
+  #about-us-text {
+    width: 24rem;
+    margin-left: 3rem;
+    text-align: left;
+  }
+
+  #about-us-numbers {
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    width: 20rem;
+  }
+
+
+/* SERVICES BACKGROUND */
+
+.service-bg {
+  background-color: #F7F7F7;
+  height: 50rem;
+}
+
+  /* CSS GRID SERVICES */
+
+  .service-grid {
+    display: grid;
+    margin-top: 1rem;
+    justify-content: center;
+    grid-gap: 18px;
+    grid-template-columns: auto auto;
+  }
+
+/* Appointment content */
+
+#appointment-bg {
+  background-color: #2ba8ecd2;
+  height: 5rem;
+}
+
+.appointment-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.appointment-content h3 {  
+  margin-right: 5rem;
+  margin-top: 2rem;
+  margin-left: 0;
+}
+
+.appointment-content button {
+ margin-left: 9rem;
+  margin-top: 1.5rem;
+}
+
+
 }
 
 @media (min-width: 992px) {
  
   .container {
     max-width: 960px;
-    border: 1px solid black;
-  }
-  .nav-clock {
-    margin-left: 10rem;
-    font-size: 0.8rem;
-    color: #626262;
-  
-  }
-  
-  .nav-clock .clock {
-    color: #2BAAEC;
-    font-size: 1rem;
-    margin-right: 0.5rem;
   }
 
-  .navbar-social {
-    margin-right: 10rem;
-    
+   /* CSS GRID SERVICES */
+
+   .service-bg {
+    background-color: #F7F7F7;
+    height: 39rem;
   }
+
+   .service-grid {
+    display: grid;
+    margin-top: 1rem;
+    justify-content: center;
+    grid-gap: 18px;
+    grid-template-columns: auto auto auto;
+  }
+
 }
 
 @media (min-width: 1200px) {

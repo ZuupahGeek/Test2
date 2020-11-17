@@ -39,7 +39,9 @@
     <nav class="navbar-main">
         <div class="container">
             <a href="#">
-                <div id="logo"></div>
+                <div id="logo">
+                    <img src="images/Logo.svg" alt="">
+                </div>
             </a>
 
             <button class="hamburger-menu">
@@ -59,15 +61,18 @@
     <!-- showcase (siluett ej med i mobil) -->
 
     <section class="showcase">
-        <div class="container">
-            <div id="silhuett"></div>
+        <div class="showcase-content container">
+            <div id="silhuett">
+                <img src="images/Showcase.svg" alt="">
+
+            </div>
             
                
 
             <div class="showcase-text">
                 <h2>Modern technologies ensure safety</h2>
                 <p>Our clinic is equipped with the highest quality medical and dental equipment, which allows for quick and effective treatment of the patient.</p>
-                <button id="about-btn">About our clinic</button>
+                <a href="#"><button id="about-btn">About our clinic</button></a>
             </div>
        </div>
     </section>
@@ -120,8 +125,14 @@
             <div class="service-grid">
 
                 <div id="tooth-inspection" class="grid-item">
-                     <div class="service-icon-bg">
-                        <img class="service-icon" src="images/tooth_icon.svg" alt="">
+                    <div class="service-icon-and-bg">
+                        <div class="service-icon-bg">
+                         <img class="service-icon" src="images/tooth_icon.svg" alt="">
+                        </div>
+                    </div>
+                        <div class="service-text">
+                        <h4>Tooth inspection</h4>
+                        <p>Comprehensive review of the mouth and detection of broken teeth and other threats.</p>
                     </div>
                 </div>
                    
@@ -129,54 +140,93 @@
                 
 
                 <div id="tooth-removal" class="grid-item">
-                    <div class="service-icon-bg">
-                        <img class="service-icon" src="images/tooth_removal.svg" alt="">
+                    <div class="service-icon-and-bg">
+                        <div class="service-icon-bg">
+                            <img class="service-icon" src="images/tooth_removal.svg" alt="">
+                        </div>
+                    </div> 
+                    <div class="service-text">
+                        <h4>Tooth removal</h4>
+                        <p>Any broken tooth is a threat to the body, so this danger should be removed from the mouth.</p>
                     </div>
-                   
                 </div>
 
                 <div id="removal-tartar" class="grid-item">
-                    <div class="service-icon-bg">
-                        <img class="service-icon" src="images/removal-tartar.svg" alt="">
+                    <div class="service-icon-and-bg">
+                        <div class="service-icon-bg">
+                            <img class="service-icon" src="images/removal-tartar.svg" alt="">
+                        </div>
                     </div>
-                    
+                    <div class="service-text">
+                        <h4>Removal of tartar</h4>
+                        <p>Tartar is the enemy of every human being, because through his presence we have unpleasant breath.</p>
+                    </div>
                 </div>
 
                 <div id="polishing" class="grid-item">
-                    <div class="service-icon-bg">
-                        <img class="service-icon" src="images/polishing.svg" alt="">
+                    <div class="service-icon-and-bg">
+                        <div class="service-icon-bg">
+                            <img class="service-icon" src="images/polishing.svg" alt="">
+                        </div>
                     </div>
-                    
+                    <div class="service-text">
+                        <h4>Polishing and cleaning</h4>
+                        <p>A simple and safe polishing treatment improves the health of teeth that will get a better look.</p>
+                    </div>
                 </div>
 
                 <div id="dental-implants" class="grid-item">
-                    <div class="service-icon-bg">
-                        <img class="service-icon dental-implants" src="images/dental_implants.svg" alt="">
+                    <div class="service-icon-and-bg">
+                        <div class="service-icon-bg">
+                            <img class="service-icon dental-implants" src="images/dental_implants.svg" alt="">
+                        </div>
                     </div>
-                    
+                    <div class="service-text">
+                        <h4>Dental implants</h4>
+                        <p>The best solution when you can not save a healthy tooth and you need to apply artificial solutions.</p>
+                    </div>
                 </div>
 
                 <div id="effective-protection" class="grid-item">
-                    <div  class="service-icon-bg">
-                        <img class="service-icon effective-protection" src="images/effective_protection.svg" alt="">
+                    <div class="service-icon-and-bg">
+                        <div  class="service-icon-bg">
+                            <img class="service-icon effective-protection" src="images/effective_protection.svg" alt="">
+                        </div>
                     </div>
-                    
+                    <div class="service-text">
+                        <h4>Effective protection</h4>
+                        <p>The cheapest tooth protection is their cleaning and a regular visit to the dentist.</p>
+                    </div>
                 </div>
             </div>
-
-
         </div>
-
-
     </section>
 
 
     <!-- appointment -->
 
+    <section>
+        <div id="appointment-bg">
+            
+                <div class="appointment-content" >
+                    <h3>Do not wait and make an appointment today!</h3>
+                    <button>Book an appointment</button>
+                </div>
+            
+        </div>
+    </section>
 
     <!-- footer -->
 
-    <footer></footer>
+    <footer>
+        <div class="footer-bg">
+            <div id="footer">
+                <p>&copy; 2020 DentialClinic</p>
+            </div>
+        </div>
+
+
+    </footer>
 
 </body>
 
